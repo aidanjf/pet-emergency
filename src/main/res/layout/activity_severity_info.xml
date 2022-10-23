@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EDF4"
+    tools:context=".SeverityInfoActivity">
+
+    <TextView
+        android:id="@+id/high_severity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="276dp"
+        android:background="#6E2020"
+        android:fontFamily="@font/alata"
+        android:shadowColor="#F00000"
+        android:text=" High Severity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#D6B3B3"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/low_severity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/low_severity"
+        android:layout_width="410dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="253dp"
+        android:background="#4D8F4F"
+        android:fontFamily="@font/alata"
+        android:text=" Low Severity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#D3E4CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/high_severity" />
+
+    <TextView
+        android:id="@+id/high_list"
+        android:layout_width="412dp"
+        android:layout_height="287dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="19dp"
+        android:background="#D5B2B2"
+        android:text=" IF...\n 1. Diarrhea continues more than 48 hours.\n 2. Your pet is acting sick along with the diarrhea (lethargy, decreased appetite, vomiting).\n 3. Bowel contains more than a few spots of blood.\n 4. Your pet has a fever (normal body temperature is up to 102.5F)."
+        android:textColor="#6E2020"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+    </TextView>
+
+    <Button
+
+        android:id="@+id/find_vet_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6E2020"
+        android:fontFamily="@font/alata"
+        android:text="Find Vet"
+        android:textColor="#D5B2B2"
+        app:layout_constraintBottom_toTopOf="@+id/low_severity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/low_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#D2E3CE"
+        android:text=" IF...\n 1. It's the first occurrence of Diarrhea in the last couple days.\n 2. Your pet recently had an experience that caused a lot of stress and/or excitement (causes a change in the normal intestinal bacteria). \n 3. You recently changed your pet’s diet (change in brand or type of food)"
+        android:textColor="#4D8E4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/low_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/high_list"
+        app:srcCompat="@drawable/low_sev" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/high_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/high_sev" />
+</androidx.constraintlayout.widget.ConstraintLayout>

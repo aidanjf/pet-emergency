@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PetEmergency</string>
+    <string name="pet_prompt">What kind of pet do you have?</string>
+    <string name="ailment_prompt">What is your pet\'s ailment?</string>
+    <string name="next_button">Next</string>
+    <string name="pet_types">Pet Types</string>
+    <string-array name="pets_array">
+        <item>Dog</item>
+    </string-array>
+
+    <string name="ailment_types">Pet Types</string>
+    <string-array name="ailment_array">
+        <item>Diarrhea</item>
+    </string-array>
+    <string name="title_activity_find_vet_maps">FindVetMapsActivity</string>
+</resources>
